@@ -56,9 +56,9 @@ Once you are in psql you can check that indeed our user & database have been cre
     docker run -d -p 5672:5672 -p 15672:15672 -v /data/rabbitmq:/data/log -v /data/rabbitmq:/data/mnesia --name rabbitmq rabbitmq
 
 ### Redis
-    # https://github.com/dockerfile/redis
+    # https://registry.hub.docker.com/_/redis/
 
-    docker run -d -p 6379:6379 -v /data/redis:/data --name redis dockerfile/redis
+    docker run -d -p 6379:6379 -v /data/redis:/data --name redis redis
 
 ### Taiga-Back
 
