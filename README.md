@@ -53,7 +53,7 @@ Once you are in psql you can check that indeed our user & database have been cre
 
     # https://github.com/dockerfile/rabbitmq
 
-    docker run -d -p 5672:5672 -p 15672:15672 -v /data/rabbitmq:/data/log -v /data/rabbitmq:/data/mnesia --name rabbitmq  dockerfile/rabbitmq
+    docker run -d -p 5672:5672 -p 15672:15672 -v /data/rabbitmq:/data/log -v /data/rabbitmq:/data/mnesia --name rabbitmq rabbitmq
 
 ### Redis
     # https://github.com/dockerfile/redis
